@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'building the app'
                 echo "building version ${NEW_VERSION}"
-                // sh 'npm install'
+                sh 'npm install'
             }
         }
         stage("test") {
